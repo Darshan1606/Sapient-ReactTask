@@ -22,7 +22,7 @@ const Navbar = () => {
                 <img className="logo" alt="logo" src={image} />
                
 
-                <div className={isNavExpanded ? " " : "nav-menu" } >
+                <div className={isNavExpanded ? " nav-menu" : "nav-expand" } >
                     <ul data-visible="false" class="primary-navigation flex">
                         <li className="active"><a href="#" aria-hidden="true">Home</a></li>
                         <li><a href="#">New</a></li>
