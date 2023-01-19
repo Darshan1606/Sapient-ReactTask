@@ -1,0 +1,235 @@
+.hero {
+    display: flex;
+}
+
+.main {
+    float: left;
+    display: grid;
+
+}
+
+.main-image {
+    float: left;
+    margin-right: 16px;
+    max-height: auto;
+}
+
+.main-image>img {
+    width: 64vw;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    margin-right: 16px;
+}
+
+.main-content>.main-title {
+    /* background-color: bisque; */
+    font-weight: 900;
+    font-size: 4rem;
+    padding: 8px 0;
+    color: hsl(240, 100%, 5%);
+}
+
+.main-content>.main-desc {
+    padding: 32px 0 32px 80px;
+}
+
+.main-content>.main-desc>p {
+    color: #5D5F79;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 48px;
+}
+
+.main-content>.main-desc>.main-button {
+    background-color: hsl(5, 85%, 63%);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 16px 24px;
+}
+
+.main-content>.main-desc>.main-button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.sidebar {
+    background-color: hsl(240, 100%, 5%);
+    margin: 0 0 16px 16px;
+    padding: 0 32px;
+    display: inline-block;
+}
+
+.sidebar>h2 {
+    text-align: left;
+    font-size: 3em;
+    color: hsl(35, 77%, 62%);
+}
+
+.side-content>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.side-content>a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.side-content>p {
+    text-align: left;
+    color: hsla(233, 8%, 79%, 0.815);
+}
+
+.side-content>hr {
+    border: 0;
+    height: 0.1vh;
+    background: hsla(233, 8%, 79%, 0.582);
+    margin: 32px 0;
+}
+
+.blog-list {
+    margin-top: 80px;
+   column-count: 3;
+   column-width: 20vh;
+}
+
+.blog-list .blog-card {
+   padding: 0 16px;
+   display: flex;
+}
+
+.blog-list > .blog-card > .blog-image > img {
+    width: auto;
+    height: 20vh;
+}
+
+.blog-list > .blog-card > .blog-desc {
+    margin: 0 20px;
+    break-inside : avoid
+}
+
+.blog-list > .blog-card > .blog-desc > span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(233, 8%, 79%);
+}
+
+.blog-list > .blog-card > .blog-desc > a{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+    text-decoration: none;
+}
+.blog-list > .blog-card > .blog-desc > a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.blog-list > .blog-card > .blog-desc > p{
+    color: #5D5F79;
+}
+
+@media screen and (max-width:768px) {
+   
+    .hero{
+        display: block;
+    }
+    .main{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-image {
+        float: left;
+        margin-right: 0;
+        
+    }
+    
+    .main-image>img {
+        width: 100%;
+        height: 100%;
+    }
+    .main-content{  
+        display: block;
+        margin-right: 0;
+    }
+    .main-content > .main-desc{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .sidebar{
+        margin:0;
+    }
+    .blog-list {
+       margin-top: 50px;
+       column-count: 1;
+       column-width: 20vh;
+    }
+    .blog-list .blog-card {
+        padding: 0;
+        margin:20px 0;
+     }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:870px) {
+    .hero{
+        display: inline;
+    }
+    .main{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-image {
+        float: left;
+        margin-right: 0;
+        
+    }
+    
+    .main-image>img {
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar{
+        margin:0;
+    }
+    .blog-list {
+        margin-top: 50px;
+        column-count: 1;
+        column-width: 20vh;
+     }
+     .blog-list .blog-card {
+        padding: 0;
+        margin:20px 0;
+     }
+}
+
+@media screen and (min-width:870px) and (max-width: 1150px) {
+
+    .sidebar{
+        margin:0;
+    }
+    .blog-list {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .blog-list .blog-card {
+        padding: 0;
+        margin:20px 0;
+     }
+}
+/* 870 1240 */
+
+@media screen and (min-width:870px) and (max-width: 1240px) {
+   .main{
+    width: 80%;
+   }
+   .sidebar{
+    width: 20%;
+   }
+}
