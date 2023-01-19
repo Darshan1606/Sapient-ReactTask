@@ -49,13 +49,14 @@ nav> .nav-menu>ul>li>a:hover {
 @media screen and (min-width:100px) and (max-width: 768px) {
     nav> .nav-expand> ul  {
         position: fixed;
-        inset: 0 0 0 40%;
+        inset: 0 0 0 30%;
         list-style: none;
         padding: min(20rem, 15vh) 2rem;
-        margin: 1=0;
+        margin: 0;
         flex-direction: column;
-        background: hsl(#fff/0.05);
-        backdrop-filter: blur(4rem);
+        background-color: #fff;
+        /* background: hsl(#fff/0.05);
+        backdrop-filter: blur(4rem); */
         text-align: left;
         
        
@@ -65,17 +66,14 @@ nav> .nav-menu>ul>li>a:hover {
     }
     nav> .nav-expand> ul > li > a{
         text-decoration: none;
-       color: #fff;
-       font-size: 1.5em;
+       color: #111;
+       font-size: 1.2em;
     }
     nav> .nav-expand> ul > li > a:hover{
        color: hsl(5, 85%, 63%); 
     }
     .hamburger{
         position: absolute;
-        z-index: 1000;
-        background: url('../../assets/icon-menu-close.svg');
-        background-repeat: no-repeat;
     }
 }
 
@@ -85,13 +83,12 @@ nav> .nav-menu>ul>li>a:hover {
     width: 40px;
     padding: 0.5rem;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
     position: absolute;
-    top:80px;
+    top:60px;
     right: 60px;
     display: none;
-    background: url('../../assets/icon-menu.svg');
-    background-repeat: no-repeat;
+    background: none;
 }
 
 @media screen and (max-width:800px) {
