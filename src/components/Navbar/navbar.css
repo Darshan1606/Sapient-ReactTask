@@ -58,10 +58,11 @@ nav> .nav-menu>ul>li>a:hover {
         /* background: hsl(#fff/0.05);
         backdrop-filter: blur(4rem); */
         text-align: left;
+        box-shadow:  rgba(121, 120, 161, 0.24) 0 20px 30px 120px;
         
        
     }
-    nav> .nav-expand> ul > li {
+        nav> .nav-expand> ul > li {
         margin: 20px 0;
     }
     nav> .nav-expand> ul > li > a{

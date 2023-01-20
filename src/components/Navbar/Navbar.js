@@ -8,7 +8,6 @@ const Navbar = () => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
-
     return (
         <div className="navbarclass">
             <button
@@ -23,7 +22,7 @@ const Navbar = () => {
                 <img className="logo" alt="logo" src={image} />
 
 
-                <div className={isNavExpanded ? "nav-expand " : "nav-menu"} >
+                <div className={isNavExpanded ? "nav-expand ": "nav-menu"} >
                     <ul data-visible="false" class="primary-navigation flex">
                         <li className="active"><a href="#" aria-hidden="true">Home</a></li>
                         <li><a href="#">New</a></li>
